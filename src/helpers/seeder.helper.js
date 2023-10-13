@@ -24,7 +24,8 @@ module.exports.seed = async (log = true) => {
                     await Post.create({
                         userId: resp._id,
                         title: faker.lorem.sentence(),
-                        description: faker.lorem.paragraph(10)
+                        description: faker.lorem.paragraph(10),
+                       
                     });
                 })
             );
